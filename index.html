@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/WhatsApp Image 2020-03-30 at 3.44.24 PM.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+    
+  </head>
+  <body>
+    
+
+          <form name="calculator">
+
+            <input class="output" type="text" id="output2" placeholder="0"  disabled />
+
+            <div class="flex">
+              
+
+              <div class="small">
+                <input class="key" type="button" id="brak" value="(" onclick="input(document.getElementById('brak').value)" />
+              </div>
+
+              <div class="small">
+                <input class="key" type="button" id="brak2" value=")" onclick="input(document.getElementById('brak2').value)" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" id="slash" value="/" onclick="input(document.getElementById('slash').value)" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" id="cross" value="*" onclick="input(document.getElementById('cross').value)" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" id="clear" value="c"   onclick="clean()" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" id="sev" value="7"  onclick="input(document.getElementById('sev').value)" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" id="eight" value="8"  onclick="input(document.getElementById('eight').value)" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" id="nine" value="9"  onclick="input(document.getElementById('nine').value)" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" id="minus" value="-"  onclick="input(document.getElementById('minus').value)" />
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="flex-number">
+                <div class="num">
+                  <input class="key" type="button" id="four" value="4"  onclick="input(document.getElementById('four').value)" />
+                </div>
+
+                <div class="num">
+                  <input class="key" type="button" id="five" value="5"  onclick="input(document.getElementById('five').value)" />
+                </div>
+
+                <div class="num">
+                  <input class="key" type="button" id="six" value="6"  onclick="input(document.getElementById('six').value)" />
+                </div>
+
+                <div class="num">
+                  <input class="key" type="button" id="one" value="1"  onclick="input(document.getElementById('one').value)" />
+                </div>
+
+                <div class="num">
+                  <input class="key" type="button" id="two" value="2"  onclick="input(document.getElementById('two').value)" />
+                </div>
+
+                <div class="num">
+                  <input class="key" type="button" id="three" value="3"  onclick="input(document.getElementById('three').value)" />
+                </div>
+              </div>
+
+              <div class="plus-btn">
+                <input class="plus" type="button" id="add" value="+"  onclick="input(document.getElementById('add').value)" />
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="zero-btn">
+                <input class="key" type="button" id="zero" value="0" onclick="input(document.getElementById('zero').value)" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" id="dot" value="." onclick="input(document.getElementById('dot').value)" />
+              </div>
+
+              <div class="flex-b">
+                <input class="key" type="button" value="=" onclick="answer()" />
+              </div>
+            </div>
+
+          </form>
+
+          <script src="script.js"></script>
+        
+  </body>
+</html>
